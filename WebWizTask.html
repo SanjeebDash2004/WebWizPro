@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>MyPro_WebWiz</title>
+
+
+<script>
+function disp()
+{
+	document.getElementById("para").innerHTML="Welcome!";
+}
+
+function cb()
+{
+	document.body.style.backgroundColor="magenta";
+}
+
+function disphead()
+{
+	document.getElementById("delay").innerHTML="Final";
+}
+function del()
+{
+	setTimeout(disphead,5000);
+}
+
+function dt()
+{
+	document.getElementById("datedisp").innerHTML=Date();
+}
+</script>
+
+
+<style type=text/css>
+body
+{
+	height : 100vh;
+	margin-top:0px;
+	padding:10px;
+	background-size:cover;
+}
+header
+{
+	background-color:yellow;
+	left:0px;
+	right:0px;
+	top:0px;
+	height:40px;
+	display:flex;
+	align-items:center;
+	border:1px solid;
+}
+header *
+{
+	display:inline;
+}
+	header li
+{
+	margin:30px
+}
+	header li a
+{
+	color:black;
+	text-decoration:none;
+}
+footer
+{
+	text-align:center;
+	padding:2px;
+}
+</style>
+</head>
+
+
+<body>
+<header>
+<nav >
+
+<h1><font color="blue">Click to Visit :-</font></h1>
+
+<ul>
+<li><a href="https://www.nitrkl.ac.in/"><b><font color="green">NITRKL</b></font></a></li>
+<li><a href="https://eapplication.nitrkl.ac.in/nitris/Login.aspx"><b>NITRIS</b></a></li>
+</ul>
+
+</nav>
+</header>
+<br><br><br>
+
+<center><h1>A Simple Website</h1></center>
+
+
+<button onclick="disp()">Click</button><p id="para"></p><br><br><br>
+<button onclick="del()">Change</button><p id="delay">Initial</p><br><br><br>
+<button onclick="dt()">DispDate</button><p id="datedisp"></p><br><br><br>
+<button onclick="cb()">ChangeBG</button><br><br><br>
+
+
+<footer>
+<p>By Sanjeeb Dash</p>
+</footer>
+
+</body>
+</html>
+
